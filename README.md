@@ -26,7 +26,8 @@ All the necessary data (e.g., user information, friends information, user posts)
 ● Default test cases specified in this document are provided in Test.java . You can compare your result from Test.java with the expected outputs in this document.     
 
 
-Function 1: Authenticate       
+Function 1: Authenticate         
+
 Objective: Implement the method public boolean auth(String authInfo) of the FrontEnd class to authenticate the user.        
 In particular, it compares the input password with the password stored in the server to check its validity.        
 Description: Upon the program start, the console will ask for the user id and the password.        
@@ -36,7 +37,8 @@ Description: Upon the program start, the console will ask for the user id and th
 ● For the successful authentication, the input password and the stored password should be identical including white spaces.        
 ● If the login fails, the program terminates.       
 
-Function 2: Post a User Article
+Function 2: Post a User Article          
+
 Objective: Implement the public void post(Pair<String, String> titleContentPair) method of the FrontEnd class to store the written post in the server.     
 Description: When a user inputs the “post” command to the console, he can start writing a post with the title and content.         
 The content of the post ends when the user inputs “Enter” twice.      
@@ -48,7 +50,8 @@ assigned ID should be 1 + the largest post id in the entire posts in $(DATA_DIRE
 ● Used the LocalDateTime class, and LocalDateTime.now to get the current date and time.           
 
 
-Function 3: Recommend Friends’ Posts       
+Function 3: Recommend Friends’ Posts      
+
 Objective: Implement the public void recommend() method of the FrontEnd class to print the latest posts of the user’s friends.         
 Description: Our SNS service recommends a user the latest posts of her friends. When the user inputs the “recommend” command to the console, up to 10 latest posts of the friends
 should be displayed.     
@@ -62,7 +65,8 @@ should be displayed.
 ● Assume all the friend ids on the friend.txt are valid, and the corresponding folders exist in the $(DATA_DIRECTORY).       
 ● The post should be printed as a format of the toString method of the Post class, not the getSummary method, with the UserInterface.println method.      
 
-Function 4: Search Posts 
+Function 4: Search Posts          
+
 Objective: Implement the public void search(String command) method of the FrontEnd class to display up to 10 posts that contain at least one keyword.      
 Description: Our SNS service enables users to search for posts with multiple keywords. When the user inputs the “search” command along with a set of keywords, the console should display up to 10 posts containing the most number of keywords in descending order of the created date and time.         
 ● The range of the search is the entire posts of all users (NOT friends only) in the $(DATA_DIRECTORY).       
