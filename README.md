@@ -77,7 +77,7 @@ Description: Our SNS service enables users to search for posts with multiple key
 ● More specific details for the keyword matching:     
 ○ It should be a case-sensitive comparison.           
 ○ You should only count the word that is identical to the provided keyword. You don’t need to consider the word that has the given keyword as a substring.       
-● How do we decide those posts to show?
+● How do we decide those posts to show?     
 ○ Sort the candidate posts based on two criteria.            
 First, sort by the number of occurrences of the keywords in descending order. When multiple posts have the same number of occurrences, sort them by the created date and time of the post in descending order (from latest to oldest).        
 ○ Select up to 10 posts from the beginning of the sorted list.         
